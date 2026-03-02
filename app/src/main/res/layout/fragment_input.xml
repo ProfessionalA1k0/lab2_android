@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оберіть шрифт:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rgFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbSans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sans Serif" />
+
+        <RadioButton
+            android:id="@+id/rbSerif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serif" />
+
+        <RadioButton
+            android:id="@+id/rbMono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monospace" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть текст"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
