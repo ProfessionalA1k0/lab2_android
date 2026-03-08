@@ -18,14 +18,14 @@ class MainActivity : AppCompatActivity(),
         }
     }
 
-    override fun onOk(text: String, fontId: Int) {
+    override fun onok(text: String, fontId: Int) {
         supportFragmentManager.beginTransaction()
             .replace(R.id.containerResult, ResultFragment.newInstance(text, fontId))
             .commit()
     }
 
     override fun onCancel() {
-        
+
         (supportFragmentManager.findFragmentById(R.id.containerInput) as? InputFragment)
             ?.clearForm()
 
